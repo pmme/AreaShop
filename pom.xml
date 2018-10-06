@@ -54,17 +54,12 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <build.number>#CUSTOM</build.number>
-    <bukkit.version>1.8-R0.1-SNAPSHOT</bukkit.version>
+    <bukkit.version>1.13.1-R0.1-SNAPSHOT</bukkit.version>
   </properties>
 
   <modules>
-    <module>WorldGuard 5</module>
-    <module>WorldGuard 6</module>
-    <module>WorldGuard 6_1_3</module>
     <module>WorldGuard 7</module>
     <module>Interfaces</module>
-    <module>WorldEdit 5</module>
-    <module>WorldEdit 6</module>
     <module>WorldEdit 7</module>
     <module>AreaShop</module>
   </modules>

@@ -143,7 +143,7 @@ public class WorldEditHandler7 extends WorldEditInterface {
 			pluginInterface.debugI(ExceptionUtils.getStackTrace(e));
 			return false;
 		}
-		editSession.flushQueue();
+		editSession.flushSession();
 		return true;
 	}
 
