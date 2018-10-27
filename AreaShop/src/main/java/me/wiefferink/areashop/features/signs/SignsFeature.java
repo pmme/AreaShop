@@ -88,7 +88,7 @@ public class SignsFeature extends RegionFeature {
 		}
 		Block block = event.getBlock();
 		// Check if it is a sign
-		if(block.getType() == Material.WALL_SIGN || block.getType() == Material.SIGN_POST) {
+		if(block.getType() == Material.WALL_SIGN || block.getType() == Material.SIGN) {
 			// Check if the rent sign is really the same as a saved rent
 			RegionSign regionSign = SignsFeature.getSignByLocation(block.getLocation());
 			if(regionSign == null) {
@@ -107,7 +107,7 @@ public class SignsFeature extends RegionFeature {
 
 	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
 	public void onIndirectSignBreak(BlockPhysicsEvent event) {
-		if(event.getBlock().getType() == Material.SIGN_POST || event.getBlock().getType() == Material.WALL_SIGN) {
+		if(event.getBlock().getType() == Material.SIGN || event.getBlock().getType() == Material.WALL_SIGN) {
 			// Check if the rent sign is really the same as a saved rent
 			if(SignsFeature.getSignByLocation(event.getBlock().getLocation()) != null) {
 				// Cancel the sign breaking, will create a floating sign but at least it is not disconnected/gone
@@ -124,7 +124,7 @@ public class SignsFeature extends RegionFeature {
 		Block block = event.getClickedBlock();
 		// Check for clicking a sign and rightclicking
 		if((event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK)
-				&& (block.getType() == Material.SIGN_POST || block.getType() == Material.WALL_SIGN)) {
+				&& (block.getType() == Material.SIGN || block.getType() == Material.WALL_SIGN)) {
 			// Check if the rent sign is really the same as a saved rent
 			RegionSign regionSign = SignsFeature.getSignByLocation(block.getLocation());
 			if(regionSign == null) {
@@ -549,7 +549,7 @@ public class SignsFeature extends RegionFeature {
 	/**
 	 * Add a sign to this region.
 	 * @param location The location of the sign
-	 * @param signType The type of the sign (WALL_SIGN or SIGN_POST)
+	 * @param signType The type of the sign (WALL_SIGN or SIGN)
 	 * @param facing   The orientation of the sign
 	 * @param profile  The profile to use with this sign (null for default)
 	 */

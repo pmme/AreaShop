@@ -96,7 +96,7 @@ public class RegionSign {
 
 	/**
 	 * Get the material of the sign
-	 * @return Material of the sign, normally {@link Material#WALL_SIGN} or {@link Material#SIGN_POST}, but could be something else or null.
+	 * @return Material of the sign, normally {@link Material#WALL_SIGN} or {@link Material#SIGN}, but could be something else or null.
 	 */
 	public Material getMaterial() {
 		try {
@@ -147,9 +147,9 @@ public class RegionSign {
 
 		Sign signState = null;
 		// Place the sign back (with proper rotation and type) after it has been hidden or (indirectly) destroyed
-		if(block.getType() != Material.WALL_SIGN && block.getType() != Material.SIGN_POST) {
+		if(block.getType() != Material.WALL_SIGN && block.getType() != Material.SIGN) {
 			Material signType = getMaterial();
-			if(signType != Material.WALL_SIGN && signType != Material.SIGN_POST) {
+			if(signType != Material.WALL_SIGN && signType != Material.SIGN) {
 				AreaShop.debug("Setting sign", key, "of region", getRegion().getName(), "failed, could not set sign block back");
 				return false;
 			}

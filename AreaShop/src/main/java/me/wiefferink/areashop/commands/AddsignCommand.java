@@ -51,7 +51,7 @@ public class AddsignCommand extends CommandAreaShop {
 				block = next;
 			}
 		}
-		if(block == null || !(block.getType() == Material.WALL_SIGN || block.getType() == Material.SIGN_POST)) {
+		if(block == null || !(block.getType() == Material.WALL_SIGN || block.getType() == Material.SIGN)) {
 			plugin.message(sender, "addsign-noSign");
 			return;
 		}

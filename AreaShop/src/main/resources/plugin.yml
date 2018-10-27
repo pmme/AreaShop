@@ -1,4 +1,5 @@
 name: AreaShop
+api-version: 1.13
 main: me.wiefferink.areashop.AreaShop
 version: "${project.version}${build.number}"
 description: "Selling and renting WorldGuard regions to your players, highly configurable."

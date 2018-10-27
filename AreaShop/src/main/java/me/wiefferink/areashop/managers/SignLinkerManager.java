@@ -120,7 +120,7 @@ public class SignLinkerManager extends Manager implements Listener {
 						block = next;
 					}
 				}
-				if(block == null || !(block.getType() == Material.WALL_SIGN || block.getType() == Material.SIGN_POST)) {
+				if(block == null || !(block.getType() == Material.WALL_SIGN || block.getType() == Material.SIGN)) {
 					plugin.message(player, "linksigns-noSign");
 					return;
 				}
