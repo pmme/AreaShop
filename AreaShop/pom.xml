@@ -76,6 +76,13 @@
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>me.wiefferink</groupId>
+            <artifactId>areashop-worldguard-7-snapshot</artifactId>
+            <version>WorldGuard-7-SNAPSHOT</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- WorldEdit implementations -->
         <dependency>
@@ -99,8 +106,33 @@
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>me.wiefferink</groupId>
+            <artifactId>areashop-worldedit-7-snapshot</artifactId>
+            <version>WorldEdit-7-SNAPSHOT</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- WorldEdit/WorldGuard -->
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <scope>provided</scope>
+            <version>7.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldguard</groupId>
+            <artifactId>worldguard-legacy</artifactId>
+            <scope>provided</scope>
+            <version>7.0.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sk89q</groupId>
+                    <artifactId>commandbook</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>com.sk89q</groupId>
             <artifactId>worldedit</artifactId>

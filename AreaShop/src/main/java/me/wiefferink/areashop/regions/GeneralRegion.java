@@ -2,6 +2,7 @@ package me.wiefferink.areashop.regions;
 
 import com.sk89q.worldedit.BlockVector;
 import com.sk89q.worldedit.BlockVector2D;
+import com.sk89q.worldedit.math.BlockVector3;
 import com.sk89q.worldguard.protection.regions.ProtectedPolygonalRegion;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import me.wiefferink.areashop.AreaShop;
